@@ -13,7 +13,7 @@ const enum endpoint {
   trending = '/trending/all/week',
   originals = '/discover/tv',
 }
-
+ 
 @Injectable({
   providedIn: 'root'
 })

@@ -33,8 +33,8 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.subs.push(this.movie.getTrending().subscribe(data => {
       this.trending = data;
-      if (this.trending && this.trending.results && this.trending.results[19]) {
-        this.headerBGUrl = 'https://image.tmdb.org/t/p/original' + this.trending.results[19].backdrop_path;
+      if (this.trending && this.trending.results && this.trending.results[1]) {
+        this.headerBGUrl = 'https://image.tmdb.org/t/p/original' + this.trending.results[1].backdrop_path;
       }
       
     }));
